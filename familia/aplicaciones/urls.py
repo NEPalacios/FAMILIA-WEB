@@ -1,22 +1,18 @@
 from django.urls import path
 from django.http import HttpResponse
-
-def inicio_view(xx):
-    return HttpResponse("BIENVENIDOS, ESTA ES UNA PAGINA DE INICIO SOBRE MIS FAMILIARES: ")
-
-def padres_view(xx):
-    return HttpResponse("ELLOS SON MIS PADRES: ")
-
-def hermanos_view(xx):
-    return HttpResponse("ELLOS SON MIS HERMANOS: ")
+from .views import inicio_view, padres_view, hermanos_view
 
 
-
-
+# urlpatterns = [
+#     path("inicio/", inicio_view),    
+#     path("padres/", padres_view),
+#     path("hermanos/", hermanos_view),
+# ]
+# familia/urls.py
 
 
 urlpatterns = [
-    path("inicio/", inicio_view),    
-    path("padres/", padres_view),
-    path("hermanos/", hermanos_view),
+    path('inicio/', inicio_view, name='inicio'),
+    path('padres/', padres_view, name='padres'),
+    path('hermanos/', hermanos_view, name='hermanos'),
 ]
