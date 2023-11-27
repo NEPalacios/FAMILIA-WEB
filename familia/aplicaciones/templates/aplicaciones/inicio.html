@@ -1,11 +1,71 @@
-<!-- familia/templates/familia/inicio.html -->
+<!-- familia/templates/familia/hermanos.html -->
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mi Página de Inicio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web con Enlaces</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0078af;
+            color: #000000;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #8b8b8b;
+            color: #fff;
+            padding: 0.5em;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #0078af;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>¡Bienvenidos a mi página de inicio!</h1>
-    <p>Contenido de la página de inicio.</p>
+    <header>
+        <h1>Bienvenido a mi Web con Enlaces</h1>
+    </header>
+
+    <nav>
+        <!-- Enlaces de navegación -->
+        <a href="/">Inicio</a> |
+        <a href="/pagina1">Padres</a> |
+        <a href="/pagina2">Hermanos</a> |
+        <a href="/pagina3">Mascotas</a>
+        
+    </nav>
+
+    <main>
+        <!-- Contenido principal de tu página con enlaces -->
+        <p>Hola, mundo! Esto es una página de ejemplo con enlaces.</p>
+        <p>Visita las otras páginas:</p>
+        <ul>
+            <li><a href="/pagina1">Padres</a></li>
+            <li><a href="/pagina2">Hermanos</a></li>
+            <li><a href="/pagina3">Mascotas</a></li>
+        </ul>
+    </main>
+
+    <footer>
+        <!-- Pie de página -->
+        <p>&copy; Ultima vez que actualice la pagina: </p>
+    </footer>
 </body>
 </html>
