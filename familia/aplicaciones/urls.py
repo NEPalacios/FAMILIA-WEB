@@ -1,6 +1,6 @@
 from django.urls import path
 from django.http import HttpResponse
-from .views import inicio_view, padres_view, hermanos_view
+from .views import inicio_view, padres_view, hermanos_view, mascotas_view
 
 
 # urlpatterns = [
@@ -15,4 +15,5 @@ urlpatterns = [
     path('inicio/', inicio_view, name='inicio'),
     path('padres/', padres_view, name='padres'),
     path('hermanos/', hermanos_view, name='hermanos'),
+    path('mascotas/', mascotas_view, name='mascotas'),
 ]

@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import request
+from django.http import HttpResponse
 
 
 # def inicio_view(xx):
@@ -15,11 +15,14 @@ from django.http import request
 
 # familia/views.py
 
-def inicio_view(request):
-    return render(request, 'aplicaciones/inicio.html')
+def inicio_view(xx):
+    return render(xx, 'aplicaciones/inicio.html')
 
-def padres_view(request):
-    return render(request, 'aplicaciones/padres.html')
+def padres_view(xx):
+    return render(xx, 'aplicaciones/padres.html')
 
-def hermanos_view(request):
-    return render(request, 'aplicaciones/hermanos.html')
+def hermanos_view(xx):
+    return render(xx, 'aplicaciones/hermanos.html')
+
+def mascotas_view(xx):
+    return render(xx, 'aplicaciones/mascotas.html')
